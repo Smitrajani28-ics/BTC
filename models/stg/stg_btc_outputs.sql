@@ -24,3 +24,4 @@ is_coinbase,
 output_address,
 output_value
 FROM flattened_outputs 
+
