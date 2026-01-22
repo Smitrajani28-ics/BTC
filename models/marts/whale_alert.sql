@@ -8,6 +8,7 @@ WHERE output_value >= 10
 GROUP BY output_address
 ORDER BY total_sent DESC
 )
+
 SELECT 
 W.output_address,
 W.total_sent,
