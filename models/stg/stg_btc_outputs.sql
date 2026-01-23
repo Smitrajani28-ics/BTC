@@ -1,4 +1,4 @@
-{{ config(MATERIALIZED='incremental', incremental_strategy='append') }}
+{{ config(materialized='incremental', incremental_strategy='append') }}
 WITH FLATTENED_OUTPUTS AS (
 SELECT
 tx.hashkey,

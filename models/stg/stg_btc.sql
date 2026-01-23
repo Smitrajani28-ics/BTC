@@ -1,4 +1,4 @@
-{{ config(MATERIALIZED='incremental', incremental_strategy='merge', unique_key='HASHKEY') }}
+{{ config(materialized='incremental', incremental_strategy='merge', unique_key='HASHKEY') }}
 SELECT *
 FROM {{ source('btc', 'btc') }}
 
